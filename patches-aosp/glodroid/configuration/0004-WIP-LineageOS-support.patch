@@ -1,0 +1,26 @@
+From baaa0966214ae83d2fceb394957326ad7147f233 Mon Sep 17 00:00:00 2001
+From: Roman Stratiienko <r.stratiienko@gmail.com>
+Date: Mon, 20 Mar 2023 19:30:43 +0200
+Subject: [PATCH 4/4] WIP: LineageOS support
+
+Signed-off-by: Roman Stratiienko <r.stratiienko@gmail.com>
+---
+ common/device-common.mk | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/common/device-common.mk b/common/device-common.mk
+index 6f0b41c..a442511 100644
+--- a/common/device-common.mk
++++ b/common/device-common.mk
+@@ -6,7 +6,7 @@ else ifneq (,$(filter %_auto,$(TARGET_PRODUCT)))
+ # TODO: Implement
+     $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
+ else
+-    $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
++    $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+ endif
+ 
+ 
+-- 
+2.34.1
+

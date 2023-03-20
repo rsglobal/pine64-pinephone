@@ -3,7 +3,7 @@
 
   <include name="aosp.xml" />
 
-  <remote  name="github"   fetch="https://github.com/" />
+  <remote  name="github1"   fetch="https://github.com/" />
   <remote  name="glodroid" fetch="https://github.com/glodroid/" />
   <remote  name="megous"   fetch="https://megous.com/git/" />
   <remote  name="gnome"    fetch="https://github.com/GNOME/" />
@@ -27,7 +27,7 @@
   <!-- camera components (vendor) -->
   <project path="glodroid/vendor/libcamera"                     remote="libcamera" name="libcamera.git"      groups="glodroid" revision="ea8ae5afff226f9373c82c1a3185e532d5d6eda0" />
   <project path="glodroid/vendor/libcamera/subprojects/libyuv"  remote="glodroid"  name="glodroid_forks.git" groups="glodroid" revision="refs/tags/libyuv-v0.8.2" />
-  <project path="glodroid/vendor/libcamera/subprojects/libyaml" remote="github"    name="yaml/libyaml.git"   groups="glodroid" revision="refs/tags/0.2.5" />
+  <project path="glodroid/vendor/libcamera/subprojects/libyaml" remote="github1"    name="yaml/libyaml.git"   groups="glodroid" revision="refs/tags/0.2.5" />
 
   <!-- modem components (vendor) -->
   <project path="glodroid/vendor/mm-radio"        remote="glodroid"    name="mm-radio.git"     groups="glodroid" revision="90f9f9a8b20ce2e153d39c9fc250ab2733a7fbb9" />
@@ -38,19 +38,19 @@
   <project path="glodroid/vendor/libgudev"        remote="gnome"       name="libgudev.git"     groups="glodroid" revision="refs/tags/237" />
   <project path="glodroid/vendor/glib"            remote="gnome"       name="glib.git"         groups="glodroid" revision="refs/tags/2.75.2" />
   <project path="glodroid/vendor/glib/subprojects/gvdb" remote="gnome" name="gvdb.git"         groups="glodroid" revision="0854af0fdb6d527a8d1999835ac2c5059976c210" />
-  <project path="glodroid/vendor/glib/subprojects/proxy-libintl" remote="github"  name="frida/proxy-libintl.git" groups="glodroid" revision="refs/tags/0.4" />
+  <project path="glodroid/vendor/glib/subprojects/proxy-libintl" remote="github1"  name="frida/proxy-libintl.git" groups="glodroid" revision="refs/tags/0.4" />
 
   <!-- other components (vendor) -->
   <project path="glodroid/vendor/aospext"         remote="glodroid" name="aospext.git"        groups="glodroid" revision="03961ccc1e3be2734966225ef4b0db7166e19a26" />
   <project path="glodroid/vendor/iio-sensors-hal" remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/iio-sensors-hal-v0.9.0" />
-  <project path="glodroid/vendor/tinyhal"         remote="github"   name="CirrusLogic/tinyhal.git" groups="glodroid" revision="9c5df120b33ca51f05d4f997da659111ab63498e" />
+  <project path="glodroid/vendor/tinyhal"         remote="github1"   name="CirrusLogic/tinyhal.git" groups="glodroid" revision="9c5df120b33ca51f05d4f997da659111ab63498e" />
   <project path="glodroid/vendor/libudev-zero"    remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/libudev_zero-v0.8.2" />
 
   <!-- bootloader components (platform) -->
-  <project path="glodroid/bootloader/u-boot"        remote="github" name="u-boot/u-boot.git"  groups="glodroid" revision="refs/tags/v2023.01" />
+  <project path="glodroid/bootloader/u-boot"        remote="github1" name="u-boot/u-boot.git"  groups="glodroid" revision="refs/tags/v2023.01" />
   <project path="glodroid/bootloader/atf"           name="platform/external/arm-trusted-firmware" groups="glodroid" revision="a127b99d5a063c798d1c6d2e1d4791a630f78355" />
-  <project path="glodroid/bootloader/crust-atf"     remote="github" name="crust-firmware/arm-trusted-firmware.git"    groups="glodroid" revision="refs/tags/crust-20220611" />
-  <project path="glodroid/bootloader/crust-firmware" remote="github" name="crust-firmware/crust.git"         groups="glodroid" revision="refs/tags/v0.5" />
+  <project path="glodroid/bootloader/crust-atf"     remote="github1" name="crust-firmware/arm-trusted-firmware.git"    groups="glodroid" revision="refs/tags/crust-20220611" />
+  <project path="glodroid/bootloader/crust-firmware" remote="github1" name="crust-firmware/crust.git"         groups="glodroid" revision="refs/tags/v0.5" />
 
   <!-- kernel/firmware components (platform) -->
   <project path="glodroid/kernel/common-android13-5.15-lts" remote="aosp" name="kernel/common"  groups="glodroid" revision="5448b2fda85f2d90de03f053226f721ba2f7e731" clone-depth="1" />

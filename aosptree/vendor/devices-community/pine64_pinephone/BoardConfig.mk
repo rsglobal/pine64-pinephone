@@ -33,3 +33,11 @@ BOARD_KERNEL_PATCHES_DIRS := \
     glodroid/configuration/patches/kernel/android13-5.15-2023-01/sun4i-drm \
 
 GD_BOOTSCRIPT_OVERLAY_DEVICE := $(BC_PATH)/boot/bootscript_device_overlay.h
+
+TARGET_KERNEL_CONFIG := defconfig
+TARGET_KERNEL_SOURCE := $(BOARD_KERNEL_SRC_DIR)
+TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_KERNEL_VERSION := 5.15
+TARGET_NO_KERNEL_OVERRIDE := true
+
+include vendor/lineage/config/BoardConfigLineage.mk
